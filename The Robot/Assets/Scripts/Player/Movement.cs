@@ -2,13 +2,15 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] float walkSpeed = 4;
+    [SerializeField] float crouchSpeed = 2;
+    
+    private CharacterController cc;
     void Start()
     {
-        
+        cc = GetComponent<CharacterController>();
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         
